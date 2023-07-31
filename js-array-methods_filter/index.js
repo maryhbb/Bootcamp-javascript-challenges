@@ -29,9 +29,7 @@ console.log(onlyCardWithIdTwo);
 const allCardsWith3Tags = cards.filter((card) => card.tags.length === 3);
 console.log(allCardsWith3Tags);
 
-const allCardsThatAreNotBookmarked = cards.filter(
-  (card) => card.isBookmarked === false
-);
+const allCardsThatAreNotBookmarked = cards.filter((card) => !card.isBookmarked);
 console.log(allCardsThatAreNotBookmarked);
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter(
