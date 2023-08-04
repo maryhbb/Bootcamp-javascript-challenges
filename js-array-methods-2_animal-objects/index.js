@@ -126,19 +126,14 @@ const allAnimalsInEuropeWeighLessThanOnehundred = animals
 // Hint: filter + map + reduce
 const weightOfAllAnimalsInAfrica = animals
   .filter((animal) => animal.continents.includes("Africa"))
-  .map((animal) => animal.weight)
-  .reduce((acc, current) => {
-    return acc + current;
+  // .map((animal) => animal.weight)
+  .reduce((acc, currentValue) => {
+    return acc + currentValue.weight;
   }, 0);
 
 // Hint: As above, but divided by the number of animals in Africa.
 const averageWeightOfAllAnimalsInAfrica =
-  animals
-    .filter((animal) => animal.continents.includes("Africa"))
-    .map((animal) => animal.weight)
-    .reduce((acc, current) => {
-      return acc + current;
-    }, 0) /
+  weightOfAllAnimalsInAfrica /
   animals.filter((animal) => animal.continents.includes("Africa")).length;
 
 export {
