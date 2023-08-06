@@ -41,6 +41,12 @@ fetchDataAndRender();
 
 // --v-- your code below this line --v--
 
-function fetchDataAndRender() {
-  fetch(); // ?
+// function fetchDataAndRender() {
+//   fetch(); // ?
+// }
+
+async function fetchDataAndRender() {
+  const response = await fetch("https://swapi.dev/api/people"); // ?
+  const data = response.json();
+  console.log(data);
 }
