@@ -34,8 +34,8 @@ const EXAMPLE_DATA = {
 };
 
 // Create dom element for a card and append it to the root
-const firstCard = Card(EXAMPLE_DATA);
-renderElement(firstCard);
+// const firstCard = Card(EXAMPLE_DATA);
+// renderElement(firstCard);
 
 fetchDataAndRender();
 
